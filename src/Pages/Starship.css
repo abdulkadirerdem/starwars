@@ -1,13 +1,21 @@
-.container {
+.starship-container {
   display: flex;
   justify-content: center;
+  width: auto;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1587279484796-61a264afc18b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #060b26;
 }
 
-h1.people-header {
+.starships-header {
   text-align: center;
   margin: 10px 0;
   font-size: 2.5em;
-  grid-row: 1;
+  color: #fff;
 }
 
 .card-container {
@@ -18,15 +26,18 @@ h1.people-header {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  width: 400px;
-  height: 200px;
-  background: greenyellow;
+  width: 450px;
+  height: 220px;
+  background: rgba(97, 73, 36, 0.5);
   padding: 20px 10px;
+  border: 2px solid #000;
+  border-radius: 15px;
 }
 .starship-name {
   text-align: center;
   margin-bottom: 10px;
   font-size: 1.8em;
+  color: #fff;
 }
 
 .info-container {

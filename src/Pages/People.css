@@ -1,6 +1,14 @@
-.container {
+.people-container {
   display: flex;
   justify-content: center;
+  width: auto;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1579566346927-c68383817a25?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #060b26;
 }
 
 h1.people-header {
@@ -8,25 +16,29 @@ h1.people-header {
   margin: 10px 0;
   font-size: 2.5em;
   grid-row: 1;
+  color: #fff;
 }
 
 .card-container {
-  /*  */
+  column-count: auto;
 }
 
 .person-card {
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  width: 400px;
-  height: 200px;
-  background: greenyellow;
+  width: 450px;
+  height: 220px;
+  background: rgba(36, 57, 97, 0.5);
   padding: 20px 10px;
+  border: 2px solid #000;
+  border-radius: 15px;
 }
 .person-name {
   text-align: center;
   margin-bottom: 10px;
   font-size: 1.8em;
+  color: #fff;
 }
 
 .info-container {
@@ -34,4 +46,5 @@ h1.people-header {
   justify-content: space-around;
   display: flex;
   flex-direction: row;
+  color: #fff;
 }

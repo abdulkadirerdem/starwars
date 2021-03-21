@@ -3,7 +3,7 @@ import "./Starship.css";
 
 const Starship = () => {
   const [loading, setLoading] = useState(false);
-  const [starships, setStarships] = useState();
+  const [starships, setStarships] = useState([]);
 
   useEffect(async () => {
     let vehicles = [];
@@ -21,12 +21,12 @@ const Starship = () => {
   }, []);
   console.log("Starshiphs -- >", starships);
   return (
-    <div className="container">
+    <div className="starship-container">
       {loading || !starships == null ? (
         <div>loading...</div>
       ) : (
         <div className="card-container">
-          <h1 className="starships-header">..starships from Star Wars</h1>
+          <h1 className="starships-header">..starships</h1>
           {starships.map((items, index) => (
             <div key={index} className="starship-card">
               <h1 className="starship-name">{items.name}</h1>

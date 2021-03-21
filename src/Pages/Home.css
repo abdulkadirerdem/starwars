@@ -1,0 +1,39 @@
+:root {
+  width: auto;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1609524976464-01e9d9abbbfc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #060b26;
+}
+.home-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-text {
+  text-align: center;
+  margin: 50px 0;
+  color: #fff;
+  border-style: dashed;
+  padding: 10px;
+}
+
+.route-container {
+  display: flex;
+  position: absolute;
+  top: 15rem;
+}
+
+.people-route,
+.starships-route {
+  background: #fff;
+  padding: 1em 5rem;
+  margin: 0 5px;
+  color: #060b26;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 1px solid #060b26;
+}

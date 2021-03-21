@@ -4,7 +4,7 @@ import "./People.css";
 const People = () => {
   const [loading, setLoading] = useState(false);
   const [people, setPeople] = useState([]);
-  var users = [];
+
   useEffect(async () => {
     let users = [];
     for (let i = 1; i < 10; i++) {
@@ -20,14 +20,13 @@ const People = () => {
     setPeople(users);
   }, []);
 
-  console.log("fdaafdsasfd-- >", people);
   return (
-    <div className="container">
+    <div className="people-container">
       {loading || !people == null ? (
         <div>loading...</div>
       ) : (
         <div className="card-container">
-          <h1 className="people-header">..people from Star Wars</h1>
+          <h1 className="people-header">..people</h1>
           {people.map((items, index) => (
             <div key={index} className="person-card">
               <h1 className="person-name">{items.name}</h1>
